@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Lightbox Example',
+    title: 'Marrying McManus',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'cars',
-        path: `${__dirname}/src/cars`,
+        name: 'photos',
+        path: `${__dirname}/src/photos`,
       },
     },
     'gatsby-transformer-sharp',
@@ -28,8 +28,8 @@ module.exports = {
         name: 'gatsby-lightbox-example',
         short_name: 'lightbox-example',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#6495ED',
+        theme_color: '#6495ED',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },

@@ -2,11 +2,13 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Lightbox from './lightbox';
 
-const Cars = () => (
-  <StaticQuery
-    query={graphql`
+const Photos = () => (
+  <div id="pictures">
+    <h1 style={{ fontFamily: 'cursive' }}>Photos</h1>
+    <StaticQuery
+      query={graphql`
       query {
-        carImages: allFile(filter: {sourceInstanceName: { eq: "cars" }}) {
+        carImages: allFile(filter: {sourceInstanceName: { eq: "photos" }}) {
           edges {
             node {
               childImageSharp {
@@ -19,7 +21,8 @@ const Cars = () => (
         }
       }
     `}
-    render={data => <Lightbox carImages={data.carImages.edges} />}
-  />
+      render={data => <Lightbox carImages={data.carImages.edges} />}
+    />
+  </div>
 );
-export default Cars;
+export default Photos;

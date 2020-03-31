@@ -1,20 +1,17 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
-import Image from '../components/image';
-import Cars from '../components/cars';
+import Photos from '../components/photos';
+import OurStory from '../components/ourStory';
+import TheWedding from '../components/thewedding';
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Cars />
-    <Link to="/page-2/">Go to page 2</Link>
+    <TheWedding />
+    <br />
+    <OurStory />
+    <br />
+    <Photos />
   </Layout>
 );
 

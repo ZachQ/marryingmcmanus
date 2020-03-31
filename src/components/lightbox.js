@@ -49,11 +49,8 @@ export default class Lightbox extends Component {
           ))}
         </LightboxContainer>
         {showLightbox && (
-        <Dialog>
+        <Dialog onDismiss={() => this.setState({ showLightbox: false })}>
           <Img fluid={selectedImage.node.childImageSharp.fluid} />
-          <button type="button" onClick={() => this.setState({ showLightbox: false })}>
-            Close
-          </button>
         </Dialog>
         )}
       </Fragment>

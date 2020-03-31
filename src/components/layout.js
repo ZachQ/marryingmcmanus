@@ -22,8 +22,7 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Marrying McManus' },
           ]}
         >
           <html lang="en" />
@@ -35,6 +34,9 @@ const Layout = ({ children }) => (
             maxWidth: 960,
             padding: '0px 1.0875rem 1.45rem',
             paddingTop: 0,
+            textAlign: 'center',
+            fontFamily: 'moderno-fb, sans-serif',
+            backgroundColor: 'rgba(255,255,255,0.9)',
           }}
         >
           {children}
