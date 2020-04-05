@@ -5,7 +5,6 @@ import { Link } from 'gatsby';
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: '#6495ED',
       marginBottom: '1.45rem',
       fontFamily: 'moderno-fb, sans-serif',
     }}
@@ -17,23 +16,24 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, textAlign: 'center' }}>
         <Link
           to="/"
           style={{
-            color: '#FFE5B4',
+            color: 'rgb(122, 128, 125)',
             textDecoration: 'none',
             fontFamily: 'cursive',
           }}
         >
-          {siteTitle}
+          Andrew McManus & Mackenzie Baucom
         </Link>
       </h1>
-      <ul style={{ listStyle: 'none', float: 'right' }}>
+      <br />
+      <ul style={{ listStyle: 'none', textAlign: 'center' }}>
         <Link
           to="#thewedding"
           style={{
-            color: '#FFE5B4',
+            color: 'rgb(122, 128, 125)',
             textDecoration: 'none',
           }}
         >
@@ -42,7 +42,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="#ourstory"
           style={{
-            color: '#FFE5B4',
+            color: 'rgb(122, 128, 125)',
             textDecoration: 'none',
           }}
         >
@@ -51,7 +51,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="#pictures"
           style={{
-            color: '#FFE5B4',
+            color: 'rgb(122, 128, 125)',
             textDecoration: 'none',
           }}
         >

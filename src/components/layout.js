@@ -35,7 +35,8 @@ const Layout = ({ children }) => (
             padding: '0px 1.0875rem 1.45rem',
             paddingTop: 0,
             textAlign: 'center',
-            fontFamily: 'moderno-fb, sans-serif',
+            fontSize: '16px',
+            fontFamily: 'MrsEavesRoman, regular',
             backgroundColor: 'rgba(255,255,255,0.9)',
           }}
         >
