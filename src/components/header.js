@@ -40,13 +40,13 @@ const Header = ({ siteTitle }) => (
           The Wedding&nbsp;&nbsp;&nbsp;&nbsp;
         </Link>
         <Link
-          to="#ourstory"
+          to="#registry"
           style={{
             color: 'rgb(122, 128, 125)',
             textDecoration: 'none',
           }}
         >
-          Our Story&nbsp;&nbsp;&nbsp;&nbsp;
+          Registry&nbsp;&nbsp;&nbsp;&nbsp;
         </Link>
         <Link
           to="#pictures"
