@@ -19,13 +19,20 @@ module.exports = {
         path: `${__dirname}/src/photos`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'background',
+        path: `${__dirname}/src/background`,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-lightbox-example',
-        short_name: 'lightbox-example',
+        name: 'Marrying McManus',
+        short_name: 'MarryingMcManus',
         start_url: '/',
         background_color: '#6495ED',
         theme_color: '#6495ED',

@@ -5,6 +5,13 @@ html {
 }
 body {
   margin: 0;
+  background-image: url("../background/flower.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 800px 800px;
+
+
 }
 article,
 aside,
