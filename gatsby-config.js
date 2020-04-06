@@ -26,6 +26,13 @@ module.exports = {
         path: `${__dirname}/src/background`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'headers',
+        path: `${__dirname}/src/headers`,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {

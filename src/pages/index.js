@@ -9,7 +9,7 @@ import Background from '../components/background';
 
 const IndexPage = () => (
   <Layout>
-    <Background count={2} size={1000}/>
+    <Background count={0}/>
     <br />
     {/* <BackgroundImage /> */}
     <TheWedding />

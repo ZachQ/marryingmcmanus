@@ -8,7 +8,7 @@ const Background = (props) => (
     <StaticQuery
       query={graphql`
       query {
-        flower: allFile(filter: {sourceInstanceName: { eq: "background" }}) {
+        flower: allFile(filter: {sourceInstanceName: { eq: "headers" }}) {
           edges {
             node {
               childImageSharp {
