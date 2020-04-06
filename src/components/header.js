@@ -5,8 +5,8 @@ import { Link } from 'gatsby';
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      marginBottom: '1.45rem',
       fontFamily: 'moderno-fb, sans-serif',
+      backgroundColor: 'rgba(255,255,255,0.9)',
     }}
   >
     <div
