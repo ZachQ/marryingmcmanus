@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 
+// This is the first image
 const Background = (props) => (
   <div id="background" style={{marginLeft: 'auto', marginRight: 'auto'}}>
     <StaticQuery
