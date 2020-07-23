@@ -24,16 +24,20 @@ const RSVP = () => {
       .then(() => console.log("Submitted"))
       .catch((error) => alert(error))
   }
-
   return (
     <div id="RSVP">
       <h1 style={{ fontFamily: 'cursive' }}>RSVP</h1>
       <b>Please RSVP below if you are able to celebrate with us:</b>
       <form name="RSVP" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
-        <input type="hidden" name="RSVP" value="contact" />
+        <input type="hidden" name="RSVP" value="RSVP" />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+          </label>
+        </p>
         <b>
           <p>
-            <label>Your Name: <input type="text" name="name" onChange={handleChange}/></label>
+            <label>Your Name: <input type="text" name="name" onChange={handleChange} /></label>
           </p>
           <p>
             <label>Number in Party (including yourself): <input type="number" min="1" max="20" name="guests" onChange={handleChange}></input></label>
