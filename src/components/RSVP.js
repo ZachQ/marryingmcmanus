@@ -30,7 +30,7 @@ export default function RSVP() {
   }
 
   return (
-    <>
+    <div>
       <h1 style={{ fontFamily: 'cursive' }}>RSVP</h1>
       <b>Please RSVP below if you are able to celebrate with us:</b>
       <form
@@ -66,7 +66,7 @@ export default function RSVP() {
           <button type="submit" style={{ borderRadius: '15px', backgroundColor: 'transparent', padding: '10px 35px' }}>Send</button>
         </p>
       </form>
-    </>
+    </div>
   )
 }
   // return (
