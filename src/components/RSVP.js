@@ -21,7 +21,7 @@ export default function RSVP() {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': form.getAttribute('name'),
+        'form-name': 'contact',
         ...state,
       }),
     })
@@ -34,7 +34,7 @@ export default function RSVP() {
       <h1 style={{ fontFamily: 'cursive' }}>RSVP</h1>
       <b>Please RSVP below if you are able to celebrate with us:</b>
       <form
-        name="guests"
+        name="contact"
         method="post"
         action="/thanks"
         data-netlify="true"
@@ -42,7 +42,7 @@ export default function RSVP() {
         onSubmit={handleSubmit}
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="guests" />
+        <input type="hidden" name="form-name" value="contact" />
         <p hidden>
           <label>
             Don’t fill this out: <input name="bot-field" onChange={handleChange} />
