@@ -34,7 +34,7 @@ export default function RSVP() {
       <h1 style={{ fontFamily: 'cursive' }}>RSVP</h1>
       <b>Please RSVP below if you are able to celebrate with us:</b>
       <form
-        name="RSVP"
+        name="guests"
         method="post"
         action="/thanks"
         data-netlify="true"
@@ -42,7 +42,7 @@ export default function RSVP() {
         onSubmit={handleSubmit}
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="RSVP" />
+        <input type="hidden" name="form-name" value="guests" />
         <p hidden>
           <label>
             Don’t fill this out: <input name="bot-field" onChange={handleChange} />
